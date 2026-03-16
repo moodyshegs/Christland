@@ -1,0 +1,57 @@
+Generate description
+it must consist of the following attributes:
+Fine-grained motion + expression + camera + meaning; fully tagged.
+
+<E> Expression/Gaze: only when face is visible. Include the observable cue inside the tags (e.g., “<E> looks left with a small smile <E>”).
+Gaze shifts are <E> (e.g., “looks to the right”).
+
+If face isn’t visible (e.g., back to camera), don’t use <E>; use <M> only if intent is clear.
+
+<C> Camera/Spatial: camera state/motion or where the subject sits in frame.
+Examples: “<C> camera is static <C>”, “<C> pans right <C>”, “<C> viewed from waist up <C>”.
+
+Don’t overuse; mention static once when relevant no need to mention it in every description.
+
+<M> Meaning/Intent: inferred purpose of the subject’s behavior, only after describing the action.
+“She raises her phone <M> to answer a call <M>.”
+Never use <M> for camera or for directly observable actions (e.g., “waves”).
+
+example: Camera + Expression + Meaning:
+ <C> The camera is static <C> as she <E> smiles softly <E> and lifts the phone <M> to answer a call <M>.
+
+
+prompt: 
+
+
+Generate summary
+
+(it must consist of the following attributes:
+
+ Who (broad), main action, environment, notable object.(No over-detail.)
+
+
+
+Always include a brief context of the environmental/ social setting. 
+
+Ex: A young girl inspects a paintbrush indoors. 
+
+Ex: A man walks into frame and poses for the camera in front of a green screen.
+
+Keep setting description objective, and succinct. )
+
+
+
+Prompt: 1.Generate summary
+2. Analyze the video very well, taking note of how the person interacts with objects, how the person is positioned while interacting with them, the facial expression each time there is a motion, the motion and shape and position of the body part doing the interaction (break the video into segments where the segments will be where there are distinct changes in motion or facial expression, and identify the timestamp for the different segments generated, and it must always have multiple segments)
+
+
+
+
+
+his side view is showing as He moves his left arm upward bending it at the elbow, his plam slightly accross his face, his right arm beside him while his palm is close to his belly,  he moved his body to the left keeping his both arm still without moving from therie position, his ghead slightly bent to the right. his right arm bent and his lower arm slightly away from his chest, his left arm atreched up but bent at the elbow, while the palm is open. he move his body to the left again slightly, still keeping his arms position. he moves his right arms slightly upward angling at his elbow, his palm open and facing his chest. his left arm is raised up bent at the elbow and the palm and lower hand behind his head. he moves slightly further to the right with his right hand slightly streched out and bent at the elbo and his palm opened covering his face as his head is turned to the lrft. his left arm is not visible but his fingers are alightly extent out an dslightly curved behind his head. he turns his body slightly back to the right again making him facing the camera at an angle, his right arm is bent ans plavced up over is shoulder, his left arm slightly bent and over his head and his palm opened faacing out. He turns his body the right, while his left arms is raised alightly up and bent at the elbow slightly across his chest. his face facing forwad mouth cosed, his right arm bent at the elbow behind his head.
+
+https://www.internalfb.com/intern/review/queue/view/?jobs=1427174866075491
+
+
+
+
